@@ -3,7 +3,7 @@ let newsListMore = [];
 let articles = 0;
 const apiKey = "5e5500d7bbad403aa9c802f399b81744"
 const loadNews = async () => {
-  let url = "http://newsapi.org/v2/everything?q=forex&sortBy=publishedAt&pageSize=20&apiKey=5e5500d7bbad403aa9c802f399b81744";
+  let url = "https://newsapi.org/v2/everything?q=forex&sortBy=publishedAt&pageSize=20&apiKey=5e5500d7bbad403aa9c802f399b81744";
   let data = await fetch(url);
   let result = await data.json();
   newsList = result.articles;
